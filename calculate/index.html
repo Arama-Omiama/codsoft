@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <form name="form" class="grid-container">
+            <input class="grid-item1" type="text" name="text" id="text" placeholder="0" disabled> 
+
+            <input class="grid-item" type="button" value="1" onclick="form.text.value+=1">
+            <input class="grid-item" type="button" value="2" onclick="form.text.value+=2">
+            <input class="grid-item" type="button" value="3" onclick="form.text.value+=3">
+            <input class="grid-item" type="button" value="+" id="addBtn">
+            
+
+            <input class="grid-item" type="button" value="4" onclick="form.text.value+=4">
+            <input class="grid-item" type="button" value="5" onclick="form.text.value+=5">
+            <input class="grid-item" class="grid-item" type="button" value="6" onclick="form.text.value+=6">
+            <input class="grid-item" type="button" value="-" id="sub-btn">
+            
+
+            <input class="grid-item" type="button" value="7" onclick="form.text.value+=7">
+            <input class="grid-item" type="button" value="8" onclick="form.text.value+=8">
+            <input class="grid-item" type="button" value="9" onclick="form.text.value+=9">
+            <input class="grid-item" type="button" value="/" id="div-btn">
+            
+
+            <input class="grid-item" type="button" value="C" onclick="form.text.value=''">
+            <input class="grid-item" type="button" value="0" onclick="form.text.value+=0">
+            <input class="grid-item" type="button" value="=" onclick="form.text.value=eval(form.text.value)">
+            <input class="grid-item" type="button" value="x" id="mul-btn">
+            
+        </form>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
